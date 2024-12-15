@@ -4,7 +4,7 @@ const bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  bot.sendMessage(chatId, 'سلام! خوش آمدید به ربات فروش VPN. برای مشاهده سرویس‌ها از منوی زیر انتخاب کنید.');
+  bot.sendMessage(chatId, 'salam');
 });
 
 bot.onText(/\/vpn_services/, (msg) => {
