@@ -7,6 +7,11 @@ bot.onText(/\/start/, (msg) => {
   bot.sendMessage(chatId, 'سلام! خوش آمدید به ربات فروش VPN. برای مشاهده سرویس‌ها از منوی زیر انتخاب کنید.');
 });
 
+bot.onText(/\/reza/, (msg) => {
+    const chatId = msg.chat.id;
+    bot.sendMessage(chatId, 'سلام رضا.');
+  });
+
 bot.onText(/\/vpn_services/, (msg) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, 'ما سرویس‌های مختلف VPN داریم:\n1. سرویس VPN معمولی\n2. سرویس VPN پرسرعت\nبرای خرید هر سرویس، شماره سرویس را ارسال کنید.');
